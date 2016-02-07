@@ -23,9 +23,9 @@
             </intent-filter>
         </activity>
 
-        <meta-data
+        <!-- <meta-data
             android:name="android.app.default_searchable"
-            android:value=".activity.SplashActivity"/>
+            android:value=".activity.SplashActivity"/> -->
 
         <meta-data
             android:name="android.app.searchable"
