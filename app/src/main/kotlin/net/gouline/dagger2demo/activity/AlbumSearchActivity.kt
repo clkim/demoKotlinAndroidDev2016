@@ -10,8 +10,7 @@ import android.util.Log
 import android.view.Menu
 import android.view.View
 import android.view.inputmethod.InputMethodManager
-import kotlinx.android.synthetic.activity_album_search.empty_view
-import kotlinx.android.synthetic.activity_album_search.recycler_view
+import kotlinx.android.synthetic.main.activity_album_search.*
 import net.gouline.dagger2demo.DemoApplication
 import net.gouline.dagger2demo.R
 import net.gouline.dagger2demo.rest.ITunesService
