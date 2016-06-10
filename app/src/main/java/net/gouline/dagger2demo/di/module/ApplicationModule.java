@@ -7,9 +7,9 @@ import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
-import retrofit.GsonConverterFactory;
-import retrofit.Retrofit;
-import retrofit.RxJavaCallAdapterFactory;
+import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit2.Retrofit;
+import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 
 /**
  * Application-wide dependencies.
