@@ -27,7 +27,7 @@ android {
     }
     buildTypes {
         debug {
-            minifyEnabled false // for now (was ok with kotlin M13); Error:Execution failed for task ':app:packageDebug'. Unable to compute hash of .../app/build/intermediates/classes-proguard/debug/classes.jar
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -35,10 +35,6 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_7
         targetCompatibility JavaVersion.VERSION_1_7
-    }
-
-    lintOptions {
-        disable 'InvalidPackage' // using beta2 of Retrofit 2
     }
 
     sourceSets {
