@@ -24,3 +24,7 @@
 
 # Picasso
 -dontwarn com.squareup.okhttp.**
+
+# seems needed for running instrumentation test; prevents lots of warnings and test-build failure
+-dontwarn rx.**
+-dontwarn okio.**
