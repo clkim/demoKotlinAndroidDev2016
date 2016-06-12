@@ -20,7 +20,7 @@ iTunes REST service again.
 We converted the *AlbumSearchActivity* class to Kotlin from Java. For simplicity, the rest of the
 demo app is left in Java.
 
-We wrote a small Android Instrumentation Test in java, which tests the *AlbumSearchActivity* class
+We wrote a small Android instrumented unit test in Java, which tests the *AlbumSearchActivity* class
 written in Kotlin.
 
 Acknowledgement -- We used as starting point Mike Gouline's "Dagger 2 Demo" app that can be found at
