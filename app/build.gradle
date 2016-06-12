@@ -40,6 +40,10 @@ android {
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
+    
+    lintOptions {
+        disable 'InvalidPackage' // Referenced from com.squareup.retrofit2.Platform.Java8, com.squareup.okio.Okio
+    }
 }
 
 dependencies {
