@@ -25,6 +25,11 @@
 # Picasso
 -dontwarn com.squareup.okhttp.**
 
-# seems needed for running instrumentation test; prevents lots of warnings and test-build failure
+# for: debug minifyEnabled true
+#  seems needed for running instrumentated unit test; prevents lots of warnings, test-build failure: Execution failed for task ':app:transformClassesAndResourcesWithProguardForDebug'
 -dontwarn rx.**
 -dontwarn okio.**
+#  these don't seem able to prevent more warnings, test-build failure: Execution failed for task ':app:transformClassesAndResourcesWithProguardForDebugAndroidTest'
+#-dontwarn android.support.**
+#-dontwarn android.support.test.runner.**
+#-dontwarn org.junit.**
