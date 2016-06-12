@@ -1,5 +1,5 @@
-Introducing Kotlin For Android Development
-==========================================
+Kotlin and Android: Better Together
+===================================
 
 ## Demo app for AnDevCon Boston 2016 class
 #### Search iTunes for albums (to display, not download)
