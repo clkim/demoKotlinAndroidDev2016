@@ -64,7 +64,7 @@ class AlbumSearchActivity : AppCompatActivity(),
 
     // object with "static" member property used by Log.x
     companion object {
-        private val TAG = AlbumSearchActivity::class.java.simpleName
+        private val TAG = AlbumSearchActivity::class.simpleName
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
