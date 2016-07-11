@@ -44,9 +44,9 @@ public class AlbumSearchActivityTest extends ActivityInstrumentationTestCase2<Al
         recyclerView = (RecyclerView) albumSearchActivity.findViewById(R.id.recycler_view);
         emptyView = (TextView) albumSearchActivity.findViewById(R.id.empty_view);
 
-        // accessing a Kotlin var in Activity class by the property name
-        //  IDE also offers getter getmITunesService()
-        mITunesService = albumSearchActivity.mITunesService;
+        // accessing a Kotlin property in Activity class
+        //  exposed because it is a late-initialized property
+        mITunesService = albumSearchActivity.getMITunesService();
     }
 
     @Test
