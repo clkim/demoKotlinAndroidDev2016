@@ -47,7 +47,7 @@ import javax.inject.Inject
 class AlbumSearchActivity : AppCompatActivity(),
         SearchView.OnQueryTextListener {
 
-    // itunes api service (Retrofit2, injected in by Dagger2)
+    // iTunes api service (Retrofit2, injected in by Dagger2)
     @Inject
     lateinit var mITunesService: ITunesService
 
@@ -72,7 +72,8 @@ class AlbumSearchActivity : AppCompatActivity(),
         setContentView(R.layout.activity_album_search)
 
         // Actual injection, performed via the component
-        DemoApplication.from(this).component.inject(this)
+        DemoApplication.from(this).component
+                .inject(this)
 
         mAlbumViewAdapter = AlbumViewAdapter()
 
