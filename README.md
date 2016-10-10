@@ -1,7 +1,7 @@
 Kotlin and Android: Better Together
 ===================================
 
-## Demo app for AnDevCon Boston 2016 class
+## Demo app for AnDevCon San Francisco 2016 class
 #### Search iTunes for albums (to display, not download)
 
 The app demonstrates Kotlin code working with the popular Java libraries Dagger 2, Retrofit 2 and
