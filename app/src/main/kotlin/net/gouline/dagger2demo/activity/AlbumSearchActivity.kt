@@ -111,7 +111,7 @@ class AlbumSearchActivity : AppCompatActivity(),
     }
 
     override fun onQueryTextSubmit(term: String): Boolean {
-        if (term.length > 0) {
+        if (term.isNotEmpty()) {
             fetchResults(term)
 
             // hide soft keyboard
@@ -124,9 +124,9 @@ class AlbumSearchActivity : AppCompatActivity(),
 
     override fun onQueryTextChange(s: String): Boolean {
         // show prompt-textview if search term is blanked out and no album items are displayed
-        if (s.length > 0)
+        if (s.isNotEmpty())
             setPromptVisibility(View.GONE)
-        else if (s.length == 0 && mAlbumViewAdapter?.itemCount == 0)
+        else if (s.isEmpty() && mAlbumViewAdapter?.itemCount == 0)
             setPromptVisibility(View.VISIBLE)
 
         return false
